@@ -11,22 +11,24 @@ script = ExtResource( 2 )
 text = "Possession"
 
 [node name="Content" parent="CenterContainer" index="0"]
-margin_left = 412.0
-margin_top = 211.0
-margin_right = 612.0
-margin_bottom = 303.0
+margin_left = 120.0
+margin_top = 43.0
+margin_right = 200.0
+margin_bottom = 91.0
 
 [node name="Game" parent="CenterContainer/Content" index="0" instance=ExtResource( 3 )]
 margin_top = 0.0
-margin_bottom = 44.0
+margin_bottom = 22.0
 
 [node name="Options" parent="CenterContainer/Content" index="1" instance=ExtResource( 3 )]
-margin_top = 48.0
-margin_bottom = 92.0
+margin_top = 26.0
+margin_bottom = 48.0
 
 [node name="Quit" parent="BackButton" index="0" instance=ExtResource( 3 )]
 margin_top = 0.0
-margin_bottom = 44.0
+margin_right = 100.0
+margin_bottom = 22.0
 
 [connection signal="pressed" from="CenterContainer/Content/Game" to="." method="_on_Game_pressed"]
+[connection signal="pressed" from="CenterContainer/Content/Options" to="." method="_on_Options_pressed"]
 [connection signal="pressed" from="BackButton/Quit" to="." method="_on_Quit_pressed"]
