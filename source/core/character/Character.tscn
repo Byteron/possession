@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://source/core/character/Character.gd" type="Script" id=1]
+[ext_resource path="res://graphics/images/character/template_character.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6, 12 )
+
+[node name="Character" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CliffTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 1 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Rays" type="Node2D" parent="."]
+
+[node name="Upper" type="RayCast2D" parent="Rays"]
+position = Vector2( 0, -11 )
+rotation = -1.5708
+cast_to = Vector2( 0, 7 )
+
+[node name="Downer" type="RayCast2D" parent="Rays"]
+position = Vector2( 0, -9 )
+rotation = -1.5708
+cast_to = Vector2( 0, 7 )
+
+[node name="States" type="Node" parent="."]
+

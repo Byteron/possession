@@ -8,9 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Character",
+"language": "GDScript",
+"path": "res://source/core/character/Character.gd"
+}, {
+"base": "Node",
+"class": "State",
+"language": "GDScript",
+"path": "res://source/core/character/states/State.gd"
+} ]
 _global_script_class_icons={
-
+"Character": "",
+"State": ""
 }
 
 [application]
