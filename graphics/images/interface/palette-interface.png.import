@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/palette.png-8d1d478d5761a38e83e48fb63d289c03.stex"
+path="res://.import/palette-interface.png-35dbaee6c663a5c461c3410b5e7f89ba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/palette.png"
-dest_files=[ "res://.import/palette.png-8d1d478d5761a38e83e48fb63d289c03.stex" ]
+source_file="res://graphics/images/interface/palette-interface.png"
+dest_files=[ "res://.import/palette-interface.png-35dbaee6c663a5c461c3410b5e7f89ba.stex" ]
 
 [params]
 
