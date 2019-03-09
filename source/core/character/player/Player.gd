@@ -6,7 +6,6 @@ onready var extents = $CollisionShape2D.shape.extents
 func _ready():
 	._ready()
 	$Label.text = name
-	Global.Player = self
 	change_state("nil")
 
 func make_current():
