@@ -3,7 +3,8 @@
 [ext_resource path="res://graphics/themes/theme.tres" type="Theme" id=1]
 [ext_resource path="res://source/interface/button/Button.gd" type="Script" id=2]
 [ext_resource path="res://audio/sounds/button.wav" type="AudioStream" id=3]
-[ext_resource path="res://graphics/images/button.png" type="Texture" id=4]
+[ext_resource path="res://graphics/images/interface/button.png" type="Texture" id=4]
+
 
 [node name="Button" type="Button"]
 margin_top = -1.0
