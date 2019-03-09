@@ -23,13 +23,13 @@ func _update_states(host, delta):
 	
 	elif not host.is_on_floor():
 		host.change_state("fall")
-	
-	elif Input.is_action_pressed("ui_down"):
-		host.change_state("crouch")
 
 func _movement(host, delta):
 	left = Input.is_action_pressed("ui_left")
 	right = Input.is_action_pressed("ui_right")
+	
+	if host.is_on_wall():
+		host.motion.x = 0
 	
 	if left and not right:
 		host.motion.x = clamp(host.motion.x - acceleration, -max_speed, 0)

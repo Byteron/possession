@@ -29,6 +29,9 @@ func _movement(host, delta):
 	left = Input.is_action_pressed("ui_left")
 	right = Input.is_action_pressed("ui_right")
 	
+	if host.is_on_wall():
+		host.motion.x = 0
+	
 	if left and not right:
 		host.motion.x = clamp(host.motion.x - acceleration, -max_speed, max_speed)
 		host.flip_left()
