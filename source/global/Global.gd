@@ -8,6 +8,7 @@ const DOWN = Vector2(0, 1)
 
 # References
 var Player
+var Terrain
 
 # Toggle Fullscreen
 func _input(event):

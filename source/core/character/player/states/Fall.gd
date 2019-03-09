@@ -3,7 +3,7 @@ extends State
 var left
 var right
 
-export(int) var acceleration = 25
+export(int) var acceleration = 20
 export(int) var max_speed = 180
 
 func enter(host):
@@ -30,10 +30,10 @@ func _movement(host, delta):
 	right = Input.is_action_pressed("ui_right")
 	
 	if left and not right:
-		host.motion.x = clamp(host.motion.x - acceleration / 2, -max_speed, max_speed)
+		host.motion.x = clamp(host.motion.x - acceleration, -max_speed, max_speed)
 		host.flip_left()
 	elif right and not left:
-		host.motion.x = clamp(host.motion.x + acceleration / 2, -max_speed, max_speed)
+		host.motion.x = clamp(host.motion.x + acceleration, -max_speed, max_speed)
 		host.flip_right()
 	else:
 		host.motion.x = lerp(host.motion.x, 0, 0.05)

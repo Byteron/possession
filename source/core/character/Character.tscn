@@ -25,12 +25,16 @@ texture = ExtResource( 2 )
 [node name="Upper" type="RayCast2D" parent="Rays"]
 position = Vector2( 0, -11 )
 rotation = -1.5708
+enabled = true
 cast_to = Vector2( 0, 7 )
+collision_mask = 4
 
 [node name="Downer" type="RayCast2D" parent="Rays"]
 position = Vector2( 0, -9 )
 rotation = -1.5708
+enabled = true
 cast_to = Vector2( 0, 7 )
+collision_mask = 4
 
 [node name="States" type="Node" parent="."]
 

@@ -61,7 +61,10 @@ func is_on_cliff():
 	return false
 
 func is_on_slide_wall():
-	if upper_ray.is_colliding() and downer_ray.is_colliding() and not is_on_floor():
+	return is_on_facing_wall() and not is_on_floor()
+
+func is_on_facing_wall():
+	if upper_ray.is_colliding() and downer_ray.is_colliding():
 		var collider = downer_ray.get_collider()
 		if collider == Global.Terrain:
 			return true

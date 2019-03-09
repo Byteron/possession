@@ -76,6 +76,11 @@ toggle_fullscreen={
  ]
 }
 
+[layer_names]
+
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Terrain"
+
 [rendering]
 
 quality/intended_usage/framebuffer_allocation=0
