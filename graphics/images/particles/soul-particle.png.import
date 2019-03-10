@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/soul-particle.png-cc5a3b68ee42341673a9e76f6150a24d.stex"
+path="res://.import/soul-particle.png-fd42b26a282a462523070e3f78dd5562.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/player/soul-particle.png"
-dest_files=[ "res://.import/soul-particle.png-cc5a3b68ee42341673a9e76f6150a24d.stex" ]
+source_file="res://graphics/images/particles/soul-particle.png"
+dest_files=[ "res://.import/soul-particle.png-fd42b26a282a462523070e3f78dd5562.stex" ]
 
 [params]
 

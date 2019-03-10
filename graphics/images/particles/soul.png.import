@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/soul.png-2921f57b328a3cd5c24fa140fb2bd2b8.stex"
+path="res://.import/soul.png-f67f95dcfcf618b57090d5edff658203.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/player/soul.png"
-dest_files=[ "res://.import/soul.png-2921f57b328a3cd5c24fa140fb2bd2b8.stex" ]
+source_file="res://graphics/images/particles/soul.png"
+dest_files=[ "res://.import/soul.png-f67f95dcfcf618b57090d5edff658203.stex" ]
 
 [params]
 

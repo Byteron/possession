@@ -29,7 +29,7 @@ script = ExtResource( 6 )
 [node name="Player" parent="." instance=ExtResource( 7 )]
 position = Vector2( 39, 244 )
 
-[node name="Characters" parent="Player" index="2"]
+[node name="Characters" parent="Player" index="1"]
 editor/display_folded = false
 
 [node name="Racoon" parent="Player/Characters" index="0"]
