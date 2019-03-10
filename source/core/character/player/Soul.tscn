@@ -1,38 +1,64 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://source/core/character/player/Soul.gd" type="Script" id=1]
-[ext_resource path="res://graphics/images/character/player/soul.png" type="Texture" id=2]
+[ext_resource path="res://graphics/images/character/player/soul-particle.png" type="Texture" id=2]
+[ext_resource path="res://graphics/images/character/player/soul.png" type="Texture" id=3]
 
-[sub_resource type="Curve" id=2]
+[sub_resource type="Curve" id=1]
 _data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.521759, 0.852 ), -0.507887, -0.507887, 0, 0, Vector2( 0.981118, 0.0688 ), -4.11879, 0.0, 0, 0 ]
 
-[sub_resource type="CurveTexture" id=3]
-curve = SubResource( 2 )
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
 
-[sub_resource type="ParticlesMaterial" id=1]
+[sub_resource type="ParticlesMaterial" id=3]
 emission_shape = 2
-emission_box_extents = Vector3( 6, 6, 1 )
+emission_box_extents = Vector3( 12, 12, 1 )
 flag_disable_z = true
 gravity = Vector3( 0, 0, 0 )
+angular_velocity = 1.5134e-43
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 0.8
-scale_curve = SubResource( 3 )
+scale_curve = SubResource( 2 )
 
-[node name="Soul" type="Sprite"]
-modulate = Color( 1, 1, 1, 0.235294 )
+[sub_resource type="ParticlesMaterial" id=4]
+emission_shape = 2
+emission_box_extents = Vector3( 8, 8, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 0, 0 )
+angular_velocity = 1.5134e-43
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 2 )
+
+[node name="Soul" type="Node2D"]
 script = ExtResource( 1 )
-speed = 1000
+
+[node name="Tween" type="Tween" parent="."]
 
 [node name="Particles2D" type="Particles2D" parent="."]
-amount = 18
-lifetime = 0.4
+modulate = Color( 1, 1, 1, 0.156863 )
+lifetime = 0.8
 local_coords = false
-process_material = SubResource( 1 )
+process_material = SubResource( 3 )
 texture = ExtResource( 2 )
+
+[node name="Particles2D2" type="Particles2D" parent="."]
+modulate = Color( 1, 1, 1, 0.0980392 )
+z_index = -1
+z_as_relative = false
+amount = 4
+lifetime = 0.2
+local_coords = false
+process_material = SubResource( 4 )
+texture = ExtResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+limit_left = 0
+limit_bottom = 320
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
+smoothing_enabled = true
+smoothing_speed = 8.0
 
