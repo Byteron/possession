@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://source/core/character/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://source/core/character/player_character/PlayerCharacter.gd" type="Script" id=2]
+[ext_resource path="res://source/core/character/player_character/states/Nil.gd" type="Script" id=3]
+
+[node name="PlayerCharacter" instance=ExtResource( 1 )]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
+
+[node name="Rays" parent="." index="4"]
+editor/display_folded = true
+
+[node name="Nil" type="Node" parent="States" index="0"]
+script = ExtResource( 3 )
+

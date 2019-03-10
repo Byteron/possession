@@ -1,7 +1,5 @@
 extends State
 
-const TIMEOUT = 0.20
-
 var gravitation = false
 var time = 0
 
@@ -12,6 +10,7 @@ var right
 export(int) var jump_force = 220
 export(int) var acceleration = 20
 export(int) var max_speed = 180
+export(float) var jump_extention_time = 0.20
 
 func enter(host):
 	# host.anim.play("jump")
@@ -38,7 +37,7 @@ func _gravity(host, delta):
 		gravitation = true
 	else:
 		time += delta
-		if time > TIMEOUT:
+		if time > jump_extention_time:
 			gravitation = true
 
 func _movement(host, delta):

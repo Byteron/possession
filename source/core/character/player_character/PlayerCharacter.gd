@@ -1,11 +1,10 @@
-extends Character
+class_name PlayerCharacter extends Character
 
 onready var anim = $AnimationPlayer
 onready var extents = $CollisionShape2D.shape.extents
 
 func _ready():
 	._ready()
-	$Label.text = name
 	change_state("nil")
 
 func make_current():
@@ -13,9 +12,5 @@ func make_current():
 
 func _setup_states():
 	states.nil = $States/Nil
-	states.idle = $States/Idle
-	states.walk = $States/Walk
-	states.jump = $States/Jump
-	states.fall = $States/Fall
 
 	

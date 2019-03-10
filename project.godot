@@ -14,13 +14,19 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://source/core/character/Character.gd"
 }, {
+"base": "Character",
+"class": "PlayerCharacter",
+"language": "GDScript",
+"path": "res://source/core/character/player_character/PlayerCharacter.gd"
+}, {
 "base": "Node",
 "class": "State",
 "language": "GDScript",
-"path": "res://source/core/character/states/State.gd"
+"path": "res://source/core/character/State.gd"
 } ]
 _global_script_class_icons={
 "Character": "",
+"PlayerCharacter": "",
 "State": ""
 }
 
