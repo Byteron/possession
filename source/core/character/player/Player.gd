@@ -4,8 +4,8 @@ extends Node2D
 var current = null
 
 onready var characters = $Characters.get_children()
-
 onready var camera = $Camera2D
+onready var soul = $Soul
 
 func _ready():
 	_set_current(0)
@@ -20,3 +20,4 @@ func _set_current(value):
 	current = value
 	characters[current].make_current()
 	camera.target = characters[current]
+	soul.target = characters[current]

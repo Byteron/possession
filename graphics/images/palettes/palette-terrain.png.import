@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/palette-terrain.png-0915a3cd9a24c77f82091306fffb706e.stex"
+path="res://.import/palette-terrain.png-03fc9310a42e19dc5d500811c844abe4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/terrain/palette-terrain.png"
-dest_files=[ "res://.import/palette-terrain.png-0915a3cd9a24c77f82091306fffb706e.stex" ]
+source_file="res://graphics/images/palettes/palette-terrain.png"
+dest_files=[ "res://.import/palette-terrain.png-03fc9310a42e19dc5d500811c844abe4.stex" ]
 
 [params]
 

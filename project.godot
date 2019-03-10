@@ -14,10 +14,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://source/core/character/Character.gd"
 }, {
-"base": "Character",
+"base": "Reference",
 "class": "PlayerCharacter",
 "language": "GDScript",
-"path": "res://source/core/character/player_character/PlayerCharacter.gd"
+"path": "res://source/core/character/animal/Animal.gd"
 }, {
 "base": "Node",
 "class": "State",

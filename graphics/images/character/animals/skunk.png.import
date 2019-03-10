@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/palette-victorian.png-f6906f5fb7186dc1159d96249edb1be1.stex"
+path="res://.import/skunk.png-9f79d4f95e2de6189c2b7b95805f6b89.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/palette-victorian.png"
-dest_files=[ "res://.import/palette-victorian.png-f6906f5fb7186dc1159d96249edb1be1.stex" ]
+source_file="res://graphics/images/character/animals/skunk.png"
+dest_files=[ "res://.import/skunk.png-9f79d4f95e2de6189c2b7b95805f6b89.stex" ]
 
 [params]
 

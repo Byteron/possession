@@ -5,7 +5,8 @@
 [ext_resource path="res://source/interface/hud/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://graphics/tilesets/terrain.tres" type="TileSet" id=4]
 [ext_resource path="res://source/core/Terrain.gd" type="Script" id=5]
-[ext_resource path="res://source/core/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://source/core/character/player/Player.tscn" type="PackedScene" id=6]
+
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -24,12 +25,19 @@ tile_data = PoolIntArray( 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 
 script = ExtResource( 5 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( 39, 244 )
+
+[node name="Characters" parent="Player" index="0"]
+editor/display_folded = false
 
 [node name="Racoon" parent="Player/Characters" index="0"]
-position = Vector2( 99.7011, 144.189 )
+position = Vector2( 95, 48 )
 
 [node name="Rat" parent="Player/Characters" index="1"]
-position = Vector2( 470.701, 151.339 )
+position = Vector2( 277, 23 )
+
+[node name="Skunk" parent="Player/Characters" index="2"]
+position = Vector2( 58, -77 )
 
 
 [editable path="Player"]

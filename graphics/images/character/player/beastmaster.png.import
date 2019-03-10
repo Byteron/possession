@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/palette-interface.png-35dbaee6c663a5c461c3410b5e7f89ba.stex"
+path="res://.import/beastmaster.png-6d6d6ce52a1182989f7f73e953d6b5ec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/interface/palette-interface.png"
-dest_files=[ "res://.import/palette-interface.png-35dbaee6c663a5c461c3410b5e7f89ba.stex" ]
+source_file="res://graphics/images/character/player/beastmaster.png"
+dest_files=[ "res://.import/beastmaster.png-6d6d6ce52a1182989f7f73e953d6b5ec.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rat.png-1e9d2af611441d964bbc8be5226dd697.stex"
+path="res://.import/racoon.png-38d75496300a253dc098bb7b89a38d05.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/player_characters/rat.png"
-dest_files=[ "res://.import/rat.png-1e9d2af611441d964bbc8be5226dd697.stex" ]
+source_file="res://graphics/images/character/animals/racoon.png"
+dest_files=[ "res://.import/racoon.png-38d75496300a253dc098bb7b89a38d05.stex" ]
 
 [params]
 

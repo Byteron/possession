@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/racoon.png-4c40cb46178182792b442dde94bf5718.stex"
+path="res://.import/palette-interface.png-f7f9970bef2320ec8672d22f3510d3b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/player_characters/racoon.png"
-dest_files=[ "res://.import/racoon.png-4c40cb46178182792b442dde94bf5718.stex" ]
+source_file="res://graphics/images/palettes/palette-interface.png"
+dest_files=[ "res://.import/palette-interface.png-f7f9970bef2320ec8672d22f3510d3b1.stex" ]
 
 [params]
 
