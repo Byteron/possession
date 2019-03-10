@@ -9,7 +9,7 @@
 [ext_resource path="res://source/core/character/rat/states/Fall.gd" type="Script" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 4 )
+extents = Vector2( 7, 4 )
 
 [node name="Rat" index="0" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
@@ -40,7 +40,7 @@ max_speed = 200
 
 [node name="Jump" type="Node" parent="States" index="3"]
 script = ExtResource( 6 )
-jump_force = 160
+jump_force = 180
 jump_extention_time = 0.1
 
 [node name="Fall" type="Node" parent="States" index="4"]
