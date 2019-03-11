@@ -46,3 +46,8 @@ anims/fade_out = SubResource( 2 )
 margin_right = 40.0
 margin_bottom = 40.0
 
+[node name="NinePatchRect" parent="TextBox" index="0"]
+self_modulate = Color( 1, 1, 1, 0.470588 )
+
+
+[editable path="TextBox"]
