@@ -6,7 +6,6 @@
 layer = 1
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
-visible = false
 motion_scale = Vector2( 1.2, 1 )
 motion_mirroring = Vector2( 480, 0 )
 

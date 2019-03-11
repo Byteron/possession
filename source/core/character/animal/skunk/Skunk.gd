@@ -12,13 +12,13 @@ func interact():
 func flip_left():
 	.flip_left()
 	gas.scale.x = 1
-	gas.position.x = 4
+	gas.position.x = 3
 	gas_area.position.x = 66
 
 func flip_right():
 	.flip_right()
 	gas.scale.x = -1
-	gas.position.x = -12
+	gas.position.x = -3
 	gas_area.position.x = -74
 
 func _setup_states():
