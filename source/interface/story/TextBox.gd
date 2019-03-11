@@ -1,7 +1,5 @@
 extends Control
 
-signal finished
-
 var writing = false
 
 export(int) var speed = 35
@@ -13,24 +11,28 @@ onready var label = $NinePatchRect/RichTextLabel
 func _process(delta):
 	if is_complete():
 		writing = false
-		emit_signal("finished")
 	elif writing:
 		visible_characters += speed * delta
 		label.visible_characters = visible_characters
 
-func write(text):
-	label.text = text
+func write(line):
+	label.text = line
 	reset()
 	writing = true
+	print("start writing textbox")
 
 func stop():
 	writing = false
 
 func reset():
-	visible_characters = 0
+	visible_characters = 0.0
+	label.visible_characters = 0
+	print("reset textbox")
 
 func complete():
 	label.visible_characters = len(label.text)
+	print("complete textbox")
 
 func is_complete():
 	return label.visible_characters >= len(label.text)
+	print("textbox is complete")

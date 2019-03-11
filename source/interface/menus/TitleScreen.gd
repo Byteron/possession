@@ -1,8 +1,7 @@
 extends Control
 
-
 func _on_Game_pressed():
-	Scene.change(Scene.Game)
+	Scene.change(Scene.Intro)
 
 func _on_Options_pressed():
 	Scene.change(Scene.Options)

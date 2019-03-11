@@ -17,9 +17,9 @@ _global_script_classes=[ {
 "base": "Control",
 "class": "Dialoque",
 "language": "GDScript",
-"path": "res://source/interface/cutscene/Dialoque.gd"
+"path": "res://source/interface/story/Dialoque.gd"
 }, {
-"base": "Reference",
+"base": "Character",
 "class": "PlayerCharacter",
 "language": "GDScript",
 "path": "res://source/core/character/animal/Animal.gd"
