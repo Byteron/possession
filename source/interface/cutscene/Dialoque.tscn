@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://graphics/themes/theme.tres" type="Theme" id=1]
+[ext_resource path="res://source/interface/cutscene/Dialoque.gd" type="Script" id=2]
+[ext_resource path="res://source/interface/cutscene/TextBox.tscn" type="PackedScene" id=3]
+
+[node name="Dialoque" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 320, 40 )
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="TextBox" parent="." instance=ExtResource( 3 )]
+margin_left = -158.0
+margin_top = -40.0
+margin_right = 158.0
+margin_bottom = -2.0
+rect_min_size = Vector2( 316, 38 )
+
