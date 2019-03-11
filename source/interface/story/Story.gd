@@ -1,8 +1,10 @@
 extends Control
 
-onready var pages = $Pages.get_children()
-
 var current = -1 setget _set_current
+
+export(String) var next_scene = null
+
+onready var pages = $Pages.get_children()
 
 func _input(event):
 	if pages:
@@ -35,4 +37,4 @@ func _on_Page_finished():
 	if has_next_page():
 		next_page()
 	else:
-		Scene.change(Scene.Game)
+		Scene.change(next_scene)

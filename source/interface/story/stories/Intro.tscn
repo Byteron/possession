@@ -6,6 +6,7 @@
 [ext_resource path="res://graphics/images/story/story-template2.png" type="Texture" id=4]
 
 [node name="Intro" index="0" instance=ExtResource( 1 )]
+next_scene = "res://source/core/Game.tscn"
 
 [node name="Page1" parent="Pages" index="0" instance=ExtResource( 2 )]
 lines = [ "This is the Intro.", "Welcome to our game.", "Now go and play. But first read these lines, which are only here to make this string longer. Sorry. Have fun." ]
