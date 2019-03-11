@@ -20,6 +20,11 @@ func exit():
 	gravitation = false
 	time = 0
 
+func input(host, event):
+	.input(host, event)
+	if event.is_action_pressed("interact"):
+		host.interact()
+
 func _update_states(host, delta):
 	
 	if host.motion.y >= 0 or host.is_on_ceiling():

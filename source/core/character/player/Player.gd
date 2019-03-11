@@ -1,7 +1,6 @@
 extends Node2D
 
-
-var current = null
+var current = null setget _set_current
 
 onready var characters = $Characters.get_children()
 onready var soul = $Soul

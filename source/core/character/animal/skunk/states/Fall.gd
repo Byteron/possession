@@ -13,6 +13,11 @@ func enter(host):
 func exit():
 	pass
 
+func input(host, event):
+	.input(host, event)
+	if event.is_action_pressed("interact"):
+		host.interact()
+
 func _update_states(host, delta):
 	
 	if host.is_on_floor():
