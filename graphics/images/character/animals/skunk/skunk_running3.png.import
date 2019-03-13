@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rat2.png-c7ae3fd1c0782a40dfde39f12fde42e5.stex"
+path="res://.import/skunk_running3.png-3fac093f78241fd3f8becbb6e6f8452c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/animals/rat2.png"
-dest_files=[ "res://.import/rat2.png-c7ae3fd1c0782a40dfde39f12fde42e5.stex" ]
+source_file="res://graphics/images/character/animals/skunk/skunk_running3.png"
+dest_files=[ "res://.import/skunk_running3.png-3fac093f78241fd3f8becbb6e6f8452c.stex" ]
 
 [params]
 

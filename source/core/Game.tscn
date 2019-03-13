@@ -18,7 +18,7 @@ script = ExtResource( 1 )
 position = Vector2( 39, 244 )
 
 [node name="BeastMaster" parent="Player" index="0"]
-position = Vector2( 9, 48 )
+position = Vector2( 42, 25 )
 
 [node name="Characters" parent="Player" index="1"]
 editor/display_folded = false
@@ -33,7 +33,7 @@ position = Vector2( 295, -80 )
 position = Vector2( 527, 42 )
 
 [node name="Soul" parent="Player" index="2"]
-position = Vector2( 10, 50 )
+position = Vector2( 46, 24 )
 
 [node name="Enemies" type="Node2D" parent="."]
 

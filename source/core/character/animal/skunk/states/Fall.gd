@@ -7,7 +7,7 @@ export(int) var acceleration = 20
 export(int) var max_speed = 180
 
 func enter(host):
-	# host.anim.play("fall")
+	host.anim.play("idle")
 	host.motion.y = 0
 
 func exit():

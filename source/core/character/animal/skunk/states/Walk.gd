@@ -7,7 +7,7 @@ export(int) var acceleration = 50
 export(int) var max_speed = 180
 
 func enter(host):
-	pass #host.anim.play("walk")
+	host.anim.play("walk")
 
 func exit():
 	pass

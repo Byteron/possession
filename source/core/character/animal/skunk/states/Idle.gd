@@ -4,7 +4,7 @@ var left
 var right
 
 func enter(host):
-	# host.anim.play("idle")
+	host.anim.play("idle")
 	host.motion.x = 0
 	
 func exit():

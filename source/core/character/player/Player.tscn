@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://source/core/character/player/Player.gd" type="Script" id=1]
-[ext_resource path="res://graphics/images/character/player/beastmaster.png" type="Texture" id=2]
+[ext_resource path="res://graphics/images/character/player/beastmaster2.png" type="Texture" id=2]
 [ext_resource path="res://source/core/character/animal/racoon/Racoon.tscn" type="PackedScene" id=3]
 [ext_resource path="res://source/core/character/animal/rat/Rat.tscn" type="PackedScene" id=4]
 [ext_resource path="res://source/core/character/animal/skunk/Skunk.tscn" type="PackedScene" id=5]

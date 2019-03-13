@@ -2,6 +2,7 @@ extends PlayerCharacter
 
 onready var gas = $Gas
 onready var gas_area = $GasArea
+onready var collision_shape = $CollisionShape2D
 
 func interact():
 	gas.emit()
@@ -12,14 +13,16 @@ func interact():
 func flip_left():
 	.flip_left()
 	gas.scale.x = 1
-	gas.position.x = 3
-	gas_area.position.x = 66
+	gas.position.x = 8
+	gas_area.position.x = 69
+	collision_shape.position.x = -5
 
 func flip_right():
 	.flip_right()
 	gas.scale.x = -1
-	gas.position.x = -3
-	gas_area.position.x = -74
+	gas.position.x = -8
+	gas_area.position.x = -71
+	collision_shape.position.x = 5
 
 func _setup_states():
 	._setup_states()

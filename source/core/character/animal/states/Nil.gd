@@ -1,6 +1,7 @@
 extends State
 
 func enter(host):
+	host.anim.play("idle")
 	host.motion = Vector2(0, 0)
 
 func exit():
