@@ -9,6 +9,9 @@ onready var pages = $Pages.get_children()
 func _input(event):
 	if pages:
 		pages[current].input(event)
+	
+	if event.is_action_pressed("ui_cancel"):
+		Scene.change(next_scene)
 
 func _ready():
 	for page in pages:

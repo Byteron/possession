@@ -13,10 +13,9 @@ func enter(host):
 func exit():
 	pass
 
-func input(host, event):
-	.input(host, event)
-	if event.is_action_pressed("interact"):
-		host.interact()
+func _input_states(host, event):
+	if event.is_action_pressed("interact") and host.can_gas():
+		host.change_state("gas")
 
 func _update_states(host, delta):
 	
