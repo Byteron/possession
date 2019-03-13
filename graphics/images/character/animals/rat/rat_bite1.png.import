@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rat_idle3.png-9ee786397bddb911fa765ac26e74946e.stex"
+path="res://.import/rat_bite1.png-c0bbd04e57e7d6fcdd659973ebc35ced.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/animals/rat_idle3.png"
-dest_files=[ "res://.import/rat_idle3.png-9ee786397bddb911fa765ac26e74946e.stex" ]
+source_file="res://graphics/images/character/animals/rat/rat_bite1.png"
+dest_files=[ "res://.import/rat_bite1.png-c0bbd04e57e7d6fcdd659973ebc35ced.stex" ]
 
 [params]
 

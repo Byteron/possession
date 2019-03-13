@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/racoon_idle2.png-319c27b6e360c4abbe482e094ad2daf2.stex"
+path="res://.import/racoon_idle1.png-ec2d37cf8c1a83a1bedf5f12fdf43bda.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/animals/racoon_idle2.png"
-dest_files=[ "res://.import/racoon_idle2.png-319c27b6e360c4abbe482e094ad2daf2.stex" ]
+source_file="res://graphics/images/character/animals/racoon/racoon_idle1.png"
+dest_files=[ "res://.import/racoon_idle1.png-ec2d37cf8c1a83a1bedf5f12fdf43bda.stex" ]
 
 [params]
 

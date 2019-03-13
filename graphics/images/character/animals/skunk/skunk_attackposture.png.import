@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rat_jumping.png-3528d4be1ae50f230b140fd6901dad50.stex"
+path="res://.import/skunk_attackposture.png-5a6e889899fb13ea5bb1c8e9ea7074fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/animals/rat_jumping.png"
-dest_files=[ "res://.import/rat_jumping.png-3528d4be1ae50f230b140fd6901dad50.stex" ]
+source_file="res://graphics/images/character/animals/skunk/skunk_attackposture.png"
+dest_files=[ "res://.import/skunk_attackposture.png-5a6e889899fb13ea5bb1c8e9ea7074fe.stex" ]
 
 [params]
 

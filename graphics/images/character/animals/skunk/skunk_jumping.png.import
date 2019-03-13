@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/skunk_idle1.png-58b65dcdbdd1576e3a9b093db224f7bc.stex"
+path="res://.import/skunk_jumping.png-c3101a18190c4ce3ae8f8fd2a0ebe4cf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/images/character/animals/skunk_idle1.png"
-dest_files=[ "res://.import/skunk_idle1.png-58b65dcdbdd1576e3a9b093db224f7bc.stex" ]
+source_file="res://graphics/images/character/animals/skunk/skunk_jumping.png"
+dest_files=[ "res://.import/skunk_jumping.png-c3101a18190c4ce3ae8f8fd2a0ebe4cf.stex" ]
 
 [params]
 
