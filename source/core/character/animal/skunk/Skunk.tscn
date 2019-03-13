@@ -1,20 +1,26 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://source/core/character/animal/Animal.tscn" type="PackedScene" id=1]
 [ext_resource path="res://source/core/character/animal/skunk/Skunk.gd" type="Script" id=2]
-[ext_resource path="res://graphics/images/character/animals/skunk/skunk.png" type="Texture" id=3]
-[ext_resource path="res://graphics/images/character/animals/skunk/skunk_running1.png" type="Texture" id=4]
-[ext_resource path="res://graphics/images/character/animals/skunk/skunk_running2.png" type="Texture" id=5]
-[ext_resource path="res://graphics/images/character/animals/skunk/skunk_running3.png" type="Texture" id=6]
-[ext_resource path="res://graphics/images/character/animals/skunk/skunk_running4.png" type="Texture" id=7]
-[ext_resource path="res://source/core/character/animal/skunk/states/Idle.gd" type="Script" id=8]
-[ext_resource path="res://source/core/character/animal/skunk/states/Walk.gd" type="Script" id=9]
-[ext_resource path="res://source/core/character/animal/skunk/states/Jump.gd" type="Script" id=10]
-[ext_resource path="res://source/core/character/animal/skunk/states/Fall.gd" type="Script" id=11]
-[ext_resource path="res://source/particles/Gas.tscn" type="PackedScene" id=12]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_falling.png" type="Texture" id=3]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_idle1.png" type="Texture" id=4]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_idle2.png" type="Texture" id=5]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_idle3.png" type="Texture" id=6]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_idle4.png" type="Texture" id=7]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_jumping.png" type="Texture" id=8]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_running1.png" type="Texture" id=9]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_running2.png" type="Texture" id=10]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_running3.png" type="Texture" id=11]
+[ext_resource path="res://graphics/images/character/animals/skunk/skunk_running4.png" type="Texture" id=12]
+[ext_resource path="res://source/core/character/animal/skunk/states/Idle.gd" type="Script" id=13]
+[ext_resource path="res://source/core/character/animal/skunk/states/Walk.gd" type="Script" id=14]
+[ext_resource path="res://source/core/character/animal/skunk/states/Jump.gd" type="Script" id=15]
+[ext_resource path="res://source/core/character/animal/skunk/states/Fall.gd" type="Script" id=16]
+[ext_resource path="res://source/particles/Gas.tscn" type="PackedScene" id=17]
 
-[sub_resource type="Animation" id=1]
-resource_name = "idle"
+[sub_resource type="Animation" id=5]
+resource_name = "fall"
+length = 0.5
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -27,6 +33,40 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ ExtResource( 3 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "jump"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 8 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -43,7 +83,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ]
+"values": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ]
 }
 
 [sub_resource type="RectangleShape2D" id=3]
@@ -56,7 +96,9 @@ extents = Vector2( 62, 27 )
 script = ExtResource( 2 )
 
 [node name="AnimationPlayer" parent="." index="0"]
+anims/fall = SubResource( 5 )
 anims/idle = SubResource( 1 )
+anims/jump = SubResource( 6 )
 anims/walk = SubResource( 2 )
 
 [node name="CollisionShape2D" parent="." index="2"]
@@ -64,7 +106,7 @@ position = Vector2( 2, 4 )
 shape = SubResource( 3 )
 
 [node name="Sprite" parent="." index="3"]
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 
 [node name="Rays" parent="." index="4"]
 editor/display_folded = false
@@ -76,18 +118,18 @@ position = Vector2( 0, -2 )
 position = Vector2( 0, 0 )
 
 [node name="Idle" type="Node" parent="States" index="1"]
-script = ExtResource( 8 )
+script = ExtResource( 13 )
 
 [node name="Walk" type="Node" parent="States" index="2"]
-script = ExtResource( 9 )
+script = ExtResource( 14 )
 
 [node name="Jump" type="Node" parent="States" index="3"]
-script = ExtResource( 10 )
+script = ExtResource( 15 )
 
 [node name="Fall" type="Node" parent="States" index="4"]
-script = ExtResource( 11 )
+script = ExtResource( 16 )
 
-[node name="Gas" parent="." index="6" instance=ExtResource( 12 )]
+[node name="Gas" parent="." index="6" instance=ExtResource( 17 )]
 position = Vector2( -8, 3 )
 scale = Vector2( -1, 1 )
 

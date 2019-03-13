@@ -13,7 +13,7 @@ export(int) var max_speed = 180
 export(float) var jump_extention_time = 0.20
 
 func enter(host):
-	host.anim.play("idle")
+	host.anim.play("jump")
 	host.motion.y = -jump_force
 
 func exit():
