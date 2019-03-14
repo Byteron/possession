@@ -9,10 +9,18 @@
 next_scene = "res://source/core/Game.tscn"
 
 [node name="Page1" parent="Pages" index="0" instance=ExtResource( 2 )]
-lines = [ "This is the Intro.", "Welcome to our game.", "Now go and play. But first read these lines, which are only here to make this string longer. Sorry. Have fun." ]
+lines = [ "Once there was only the bark of the trees.", "Once only nature reigned. ", "And blood was the engine of the world.", "Today the trees are concrete and metal, room of narcissistic creatures, ignoring their origin." ]
 texture = ExtResource( 3 )
 
 [node name="Page2" parent="Pages" index="1" instance=ExtResource( 2 )]
-lines = [ "...", "But before you go, let me tell you that you are awesome!", "Now you go." ]
+lines = [ "Today I came to save my brothers and friends, cursed by ancient arts like the earth itself. ", "Today simple animals without conscience, once veritable kings, beings whose existence is unknown even by the most erudite." ]
+texture = ExtResource( 4 )
+
+[node name="Page3" parent="Pages" index="2" instance=ExtResource( 2 )]
+lines = [ "I have come to this city looking for ancient treasures, keys of our chains.", "The night has brought me to this den called \"Possesion\" where these creatures flirt with arts to which they do not know their real name, they call themselves \"the guild of thieves\", it is supposed to be a secret, but today I'm telling you.", "I infiltrated their ranks like a novice \"thief\" but in less nights than those who remember the high ranks want me in their teams." ]
+texture = ExtResource( 3 )
+
+[node name="Page4" parent="Pages" index="3" instance=ExtResource( 2 )]
+lines = [ "But none of that interests me since I am already close to obtaining what I have come to look for." ]
 texture = ExtResource( 4 )
 
