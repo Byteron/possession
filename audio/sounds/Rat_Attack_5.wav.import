@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Rat_Attack_5.wav-43c78e6ef8c85e780bdc63a7ced55c4d.sample"
+
+[deps]
+
+source_file="res://audio/sounds/Rat_Attack_5.wav"
+dest_files=[ "res://.import/Rat_Attack_5.wav-43c78e6ef8c85e780bdc63a7ced55c4d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

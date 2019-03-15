@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bar_loop.wav-467481d282275ae481cd5812d5f83b83.sample"
+
+[deps]
+
+source_file="res://audio/music/bar_loop.wav"
+dest_files=[ "res://.import/bar_loop.wav-467481d282275ae481cd5812d5f83b83.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

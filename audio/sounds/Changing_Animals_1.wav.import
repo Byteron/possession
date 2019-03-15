@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Changing_Animals_1.wav-0115ae274bd246d196bb33ffb34901ef.sample"
+
+[deps]
+
+source_file="res://audio/sounds/Changing_Animals_1.wav"
+dest_files=[ "res://.import/Changing_Animals_1.wav-0115ae274bd246d196bb33ffb34901ef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Steps_16.wav-e3010078e324b1d5819334b91cc0d45e.sample"
+
+[deps]
+
+source_file="res://audio/sounds/Steps_16.wav"
+dest_files=[ "res://.import/Steps_16.wav-e3010078e324b1d5819334b91cc0d45e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
