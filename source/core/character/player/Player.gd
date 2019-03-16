@@ -6,6 +6,7 @@ onready var characters = $Characters.get_children()
 onready var soul = $Soul
 
 func _ready():
+	Global.Animals = characters
 	_set_current(0)
 
 func cycle_characters():
