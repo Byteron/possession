@@ -1,8 +1,8 @@
 extends Node2D
 
 var playlist = {
-	menu_theme = preload("res://audio/music/Menu_Loop.wav"),
-	main_theme = preload("res://audio/music/Main_Theme_Loop.wav"),
+	main_theme = preload("res://audio/music/Menu_Loop.wav"),
+	menu_theme = preload("res://audio/music/Main_Theme_Loop.wav"),
 	bar_theme = preload("res://audio/music/bar_loop.wav"),
 }
 
