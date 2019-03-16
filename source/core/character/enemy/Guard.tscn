@@ -1,0 +1,60 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://source/core/character/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://source/core/character/enemy/Guard.gd" type="Script" id=2]
+[ext_resource path="res://graphics/images/enemy/enemy_idle1.png" type="Texture" id=3]
+[ext_resource path="res://graphics/images/enemy/enemy_idle2.png" type="Texture" id=4]
+[ext_resource path="res://graphics/images/enemy/enemy_idle3.png" type="Texture" id=5]
+[ext_resource path="res://graphics/images/enemy/enemy_idle4.png" type="Texture" id=6]
+[ext_resource path="res://source/core/character/enemy/states/Guard.gd" type="Script" id=7]
+[ext_resource path="res://source/core/character/enemy/states/Warned.gd" type="Script" id=8]
+
+[sub_resource type="Animation" id=1]
+resource_name = "idle"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 14, 15 )
+
+[node name="Guard" index="0" instance=ExtResource( 1 )]
+collision_layer = 16
+collision_mask = 30
+script = ExtResource( 2 )
+
+[node name="TurnTimer" type="Timer" parent="." index="0"]
+wait_time = 5.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+anims/idle = SubResource( 1 )
+
+[node name="CollisionShape2D" parent="." index="3"]
+shape = SubResource( 2 )
+
+[node name="Sprite" parent="." index="4"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="Guard" type="Node" parent="States" index="0"]
+script = ExtResource( 7 )
+
+[node name="Warned" type="Node" parent="States" index="1"]
+script = ExtResource( 8 )
+
+[node name="Mark" type="Node2D" parent="." index="7"]
+position = Vector2( 0, -26 )
+
+[connection signal="timeout" from="TurnTimer" to="." method="_on_TurnTimer_timeout"]
