@@ -10,7 +10,7 @@ func _input(event):
 	if pages:
 		pages[current].input(event)
 	
-	if event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed("ui_cancel") and next_scene:
 		Scene.change(next_scene)
 
 func _ready():
@@ -40,4 +40,5 @@ func _on_Page_finished():
 	if has_next_page():
 		next_page()
 	else:
-		Scene.change(next_scene)
+		if next_scene:
+			Scene.change(next_scene)
