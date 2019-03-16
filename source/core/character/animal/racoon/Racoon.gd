@@ -1,5 +1,7 @@
 extends PlayerCharacter
 
+onready var bag = $Bag
+
 func _setup_states():
 	._setup_states()
 	states.idle = $States/Idle
@@ -7,4 +9,5 @@ func _setup_states():
 	states.jump = $States/Jump
 	states.fall = $States/Fall
 
-	
+func add_item(item):
+	bag.add_child(item)
