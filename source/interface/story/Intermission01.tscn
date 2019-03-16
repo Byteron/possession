@@ -5,7 +5,7 @@
 [ext_resource path="res://graphics/images/story/beastmaster.png" type="Texture" id=3]
 
 [node name="Story" instance=ExtResource( 1 )]
-next_scene = " res://source/core/Game.tscn"
+next_scene = "res://source/core/Game.tscn"
 
 [node name="Page" parent="Pages" index="0" instance=ExtResource( 2 )]
 lines = [ "Of course, it was not going to be that easy, they are speaking in code in this letter but for what I can decipher there is a book that details the items trafficked, but it is encrypted and only decipherable with a scroll that contains the decipher key", "Thankfully these merchants aren't as smart as they think and they left me clues of the delivery. ", "After some soft interrogation cowardice won and the delivery boy was open to selling me his granny for some coin if I asked, so now I know where to find both the decipher scroll and the inventory book... time to work." ]
