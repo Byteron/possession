@@ -4,8 +4,7 @@
 [ext_resource path="res://audio/sounds/door.ogg" type="AudioStream" id=2]
 [ext_resource path="res://graphics/images/terrain/door.png" type="Texture" id=3]
 
-
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "open"
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:scale")
@@ -32,7 +31,7 @@ tracks/1/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 5, 16 )
 
 [node name="Door" type="Node2D"]
@@ -43,7 +42,7 @@ stream = ExtResource( 2 )
 bus = "Effects"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/open = SubResource( 2 )
+anims/open = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 3 )
@@ -55,6 +54,6 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 8, 16 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
