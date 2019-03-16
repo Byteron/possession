@@ -1,5 +1,7 @@
 extends Character
 
+const MARK = preload("res://source/interface/hud/SuspicionMark.tscn")
+
 var vision = 120
 
 onready var anim = $AnimationPlayer
@@ -47,6 +49,10 @@ func is_player_in_sight():
 
 func _draw():
 	draw_circle(global_position, vision, Color("FFFFFF"))
+
+func spawn_mark():
+	var mark = MARK.instance()
+	$Mark.add_child(mark)
 
 func _setup_states():
 	states.patrol = $States/Patrol

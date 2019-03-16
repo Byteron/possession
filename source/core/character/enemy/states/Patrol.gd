@@ -3,7 +3,7 @@ extends State
 export(int) var speed = 100
 
 func enter(host):
-	host.anim.play("patrol")
+	host.anim.play("walk")
 	host.motion.x = 0
 
 func exit():
