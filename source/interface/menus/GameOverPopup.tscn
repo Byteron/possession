@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://source/interface/menus/GameOver.tscn" type="PackedScene" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[node name="GameOverPopup" type="PopupPanel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -50.0
+margin_right = 100.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 200, 100 )
+custom_styles/panel = SubResource( 1 )
+popup_exclusive = true
+
+[node name="GameOver" parent="." instance=ExtResource( 1 )]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+
