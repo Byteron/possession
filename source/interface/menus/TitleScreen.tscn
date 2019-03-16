@@ -25,7 +25,7 @@ animations = [ {
 "frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 3.0
 } ]
 
 [sub_resource type="SpriteFrames" id=2]
@@ -33,7 +33,7 @@ animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 3.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
@@ -49,7 +49,7 @@ animations = [ {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 4.0
 } ]
 
 [node name="TitleScreen" index="0" instance=ExtResource( 1 )]
@@ -84,24 +84,25 @@ margin_bottom = 22.0
 [node name="BM" type="AnimatedSprite" parent="." index="4"]
 position = Vector2( 41.1392, 144.922 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="RACOON" type="AnimatedSprite" parent="." index="5"]
 position = Vector2( 134.654, 49.728 )
 frames = SubResource( 2 )
+frame = 3
 playing = true
 flip_h = true
 
 [node name="RAT" type="AnimatedSprite" parent="." index="6"]
 position = Vector2( 190.239, 55.0009 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="SKUNK" type="AnimatedSprite" parent="." index="7"]
 position = Vector2( 333.791, 166.588 )
 frames = SubResource( 4 )
-frame = 1
+frame = 3
 playing = true
 flip_h = true
 
