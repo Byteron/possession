@@ -4,7 +4,7 @@
 [ext_resource path="res://source/interface/story/Page.tscn" type="PackedScene" id=2]
 [ext_resource path="res://graphics/images/story/beastmaster.png" type="Texture" id=3]
 
-[node name="Story" index="0" instance=ExtResource( 1 )]
+[node name="Story" instance=ExtResource( 1 )]
 next_scene = " res://source/core/Game.tscn"
 
 [node name="Page" parent="Pages" index="0" instance=ExtResource( 2 )]

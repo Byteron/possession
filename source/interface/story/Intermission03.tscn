@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://source/interface/story/Story.tscn" type="PackedScene" id=1]
+[ext_resource path="res://source/interface/story/Page.tscn" type="PackedScene" id=2]
+[ext_resource path="res://graphics/images/story/beastmaster.png" type="Texture" id=3]
+
+[node name="Story" index="0" instance=ExtResource( 1 )]
+next_scene = "res://source/core/Game.tscn"
+
+[node name="Page" parent="Pages" index="0" instance=ExtResource( 2 )]
+lines = [ "Last stop now I know where the medallion is, the problem is it seems it has been split by accident and the parts are kept in different places because they were sold separately." ]
+texture = ExtResource( 3 )
+
