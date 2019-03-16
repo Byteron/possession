@@ -7,7 +7,7 @@ const UP = Vector2(0, -1)
 const DOWN = Vector2(0, 1)
 
 # References
-var Player
+var Animals
 var Terrain
 
 # Toggle Fullscreen
