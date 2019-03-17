@@ -4,8 +4,8 @@
 [ext_resource path="res://source/interface/story/Page.tscn" type="PackedScene" id=2]
 [ext_resource path="res://graphics/images/story/beastmaster.png" type="Texture" id=3]
 
-[node name="Story" instance=ExtResource( 1 )]
-next_scene = "res://source/core/Game.tscn"
+[node name="Story" index="0" instance=ExtResource( 1 )]
+next_scene = "res://source/interface/menus/TitleScreen.tscn"
 
 [node name="Page" parent="Pages" index="0" instance=ExtResource( 2 )]
 lines = [ "Now with the medallion full, my brothers are back to normal, and we are all back to full power again, now time to destroy this city and return the crown to nature." ]
