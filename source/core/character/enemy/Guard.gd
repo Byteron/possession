@@ -11,9 +11,6 @@ func _ready():
 	._ready()
 	change_state("patrol")
 
-func _process(delta):
-	update()
-
 func is_facing_player():
 	
 	if not Global.Animals:
@@ -46,9 +43,6 @@ func is_player_in_sight():
 		if collision and collision.collider == animal:
 			in_sight = true
 	return in_sight
-
-func _draw():
-	draw_circle(global_position, vision, Color("FFFFFF"))
 
 func spawn_mark():
 	var mark = MARK.instance()
