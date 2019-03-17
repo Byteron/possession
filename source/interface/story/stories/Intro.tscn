@@ -8,9 +8,9 @@
 [ext_resource path="res://graphics/images/story/nigthbar.png" type="Texture" id=6]
 [ext_resource path="res://graphics/images/story/beastmaster.png" type="Texture" id=7]
 
-[node name="Intro" instance=ExtResource( 1 )]
+[node name="Intro" index="0" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-next_scene = "res://source/core/Game.tscn"
+next_scene = "res://source/core/levels/01_Raccon.tscn"
 
 [node name="Page" parent="Pages" index="0" instance=ExtResource( 3 )]
 

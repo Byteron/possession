@@ -5,7 +5,7 @@
 [ext_resource path="res://graphics/images/story/beastmaster.png" type="Texture" id=3]
 
 [node name="Story" instance=ExtResource( 1 )]
-next_scene = "res://source/core/Game.tscn"
+next_scene = "res://source/core/levels/03_Skunk.tscn"
 
 [node name="Page" parent="Pages" index="0" instance=ExtResource( 2 )]
 lines = [ "I got the scroll, time to get that inventory book or I'll have wasted my time." ]

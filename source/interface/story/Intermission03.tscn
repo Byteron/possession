@@ -5,7 +5,7 @@
 [ext_resource path="res://graphics/images/story/beastmaster.png" type="Texture" id=3]
 
 [node name="Story" instance=ExtResource( 1 )]
-next_scene = "res://source/core/Game.tscn"
+next_scene = "res://source/core/levels/04_First.tscn"
 
 [node name="Page" parent="Pages" index="0" instance=ExtResource( 2 )]
 lines = [ "Last stop now I know where the medallion is, the problem is it seems it has been split by accident and the parts are kept in different places because they were sold separately.", "How can this merchants be careful enough to encrypt messages but not to sell the whole piece? it's beyond me." ]
