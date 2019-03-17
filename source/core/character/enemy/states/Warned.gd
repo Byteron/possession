@@ -9,7 +9,7 @@ export(int) var speed = 100
 
 func enter(host):
 	host.anim.play("idle")
-	host.spawn_mark()
+	host.spawn_suspicion_mark()
 	host.motion.x = 0
 
 func exit():

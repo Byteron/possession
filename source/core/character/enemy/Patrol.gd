@@ -1,6 +1,7 @@
 extends Character
 
-const MARK = preload("res://source/interface/hud/SuspicionMark.tscn")
+const SUSPICION_MARK = preload("res://source/interface/hud/SuspicionMark.tscn")
+const SLEEP_MARK = preload("res://source/interface/hud/SleepMark.tscn")
 
 var vision = 120
 
@@ -47,8 +48,12 @@ func is_player_in_sight():
 			in_sight = true
 	return in_sight
 
-func spawn_mark():
-	var mark = MARK.instance()
+func spawn_suspicion_mark():
+	var mark = SUSPICION_MARK.instance()
+	$Mark.add_child(mark)
+
+func spawn_sleep_mark():
+	var mark = SLEEP_MARK.instance()
 	$Mark.add_child(mark)
 
 func _draw():

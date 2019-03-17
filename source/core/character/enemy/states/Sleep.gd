@@ -6,7 +6,8 @@ var time = 0
 
 func enter(host):
 	time = 0
-	host.anim.stop()
+	host.anim.play("sleep")
+	host.spawn_sleep_mark()
 	host.motion.x = 0
 	print("sleep")
 
