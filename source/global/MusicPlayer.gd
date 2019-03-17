@@ -13,6 +13,11 @@ var changing_animal_sfx = [
 	preload("res://audio/sounds/Changing_Animals_4.wav"),
 ]
 
+var pickup_sfx = [
+	preload("res://audio/sounds/Collect_Items_1.wav"),
+	preload("res://audio/sounds/Collect_Items_2.wav"),
+	preload("res://audio/sounds/Collect_Items_3.wav"),
+]
 var next_track = null
 
 onready var tween = $Tween
@@ -29,6 +34,10 @@ func play(track):
 func get_random_change_sfx():
 	randomize()
 	return changing_animal_sfx[randi() % changing_animal_sfx.size()]
+
+func get_random_pickup_sfx():
+	randomize()
+	return pickup_sfx[randi() % pickup_sfx.size()]
 
 func _on_Tween_tween_completed(object, key):
 	if next_track:

@@ -8,6 +8,8 @@ var current_state = null
 
 onready var states = {}
 
+onready var audio = $AudioStreamPlayer
+
 onready var body = $Sprite
 
 onready var upper_ray = $Rays/Upper
