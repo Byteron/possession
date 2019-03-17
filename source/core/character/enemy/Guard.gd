@@ -38,7 +38,7 @@ func is_player_in_sight():
 		if (animal.global_position - global_position).length() > vision:
 			continue
 		
-		var collision = space_state.intersect_ray(global_position, animal.global_position, [], 3)
+		var collision = space_state.intersect_ray(global_position, animal.global_position, [self], collision_mask)
 		
 		if collision and collision.collider == animal:
 			in_sight = true
