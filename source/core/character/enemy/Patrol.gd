@@ -11,6 +11,9 @@ func _ready():
 	._ready()
 	change_state("patrol")
 
+func _process(delta):
+	update()
+
 func is_facing_player():
 	
 	if not Global.Animals:
@@ -47,6 +50,9 @@ func is_player_in_sight():
 func spawn_mark():
 	var mark = MARK.instance()
 	$Mark.add_child(mark)
+
+func _draw():
+	draw_circle(to_local(global_position), vision, Color("06FFFFFF"))
 
 func _setup_states():
 	states.patrol = $States/Patrol
