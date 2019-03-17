@@ -7,9 +7,11 @@ onready var collision_shape = $CollisionShape2D
 
 func gas():
 	gas.emit()
+	audio.stream = MusicPlayer.get_random_gas_sfx()
+	audio.play()
 	var enemies = gas_area.get_overlapping_bodies()
 	for enemy in enemies:
-		enemy.queue_free()
+		enemy.change_state("sleep")
 
 func can_gas():
 	return gas_timer.is_stopped()

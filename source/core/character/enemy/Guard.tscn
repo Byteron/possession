@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://source/core/character/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://source/core/character/enemy/Guard.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://graphics/images/enemy/enemy_idle4.png" type="Texture" id=6]
 [ext_resource path="res://source/core/character/enemy/states/Guard.gd" type="Script" id=7]
 [ext_resource path="res://source/core/character/enemy/states/Warned.gd" type="Script" id=8]
+[ext_resource path="res://source/core/character/enemy/states/Sleep.gd" type="Script" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "idle"
@@ -56,5 +57,8 @@ script = ExtResource( 7 )
 
 [node name="Warned" type="Node" parent="States" index="1"]
 script = ExtResource( 8 )
+
+[node name="Sleep" type="Node" parent="States" index="2"]
+script = ExtResource( 9 )
 
 [connection signal="timeout" from="TurnTimer" to="." method="_on_TurnTimer_timeout"]

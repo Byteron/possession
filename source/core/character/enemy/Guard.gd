@@ -57,6 +57,7 @@ func _draw():
 func _setup_states():
 	states.patrol = $States/Guard
 	states.warned = $States/Warned
+	states.sleep = $States/Sleep
 
 func _on_TurnTimer_timeout():
 	flip()
