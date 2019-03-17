@@ -6,6 +6,13 @@ var playlist = {
 	bar_theme = preload("res://audio/music/bar_loop.wav"),
 }
 
+var changing_animal_sfx = [
+	preload("res://audio/sounds/Changing_Animals_1.wav"),
+	preload("res://audio/sounds/Changing_Animals_2.wav"),
+	preload("res://audio/sounds/Changing_Animals_3.wav"),
+	preload("res://audio/sounds/Changing_Animals_4.wav"),
+]
+
 var next_track = null
 
 onready var tween = $Tween
@@ -18,6 +25,10 @@ func play(track):
 	next_track = track
 	tween.interpolate_property(audio, "volume_db", audio.volume_db, -72, 0.3, Tween.TRANS_LINEAR, Tween.EASE_IN)
 	tween.start()
+
+func get_random_change_sfx():
+	randomize()
+	return changing_animal_sfx[randi() % changing_animal_sfx.size()]
 
 func _on_Tween_tween_completed(object, key):
 	if next_track:
