@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://source/core/character/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://source/core/character/enemy/Patrol.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://graphics/images/enemy/enemy_walking5.png" type="Texture" id=11]
 [ext_resource path="res://source/core/character/enemy/states/Patrol.gd" type="Script" id=12]
 [ext_resource path="res://source/core/character/enemy/states/Warned.gd" type="Script" id=13]
+[ext_resource path="res://source/core/character/enemy/states/Sleep.gd" type="Script" id=14]
 
 [sub_resource type="Animation" id=1]
 resource_name = "idle"
@@ -79,4 +80,7 @@ script = ExtResource( 12 )
 
 [node name="Warned" type="Node" parent="States" index="1"]
 script = ExtResource( 13 )
+
+[node name="Sleep" type="Node" parent="States" index="2"]
+script = ExtResource( 14 )
 

@@ -18,6 +18,15 @@ var pickup_sfx = [
 	preload("res://audio/sounds/Collect_Items_2.wav"),
 	preload("res://audio/sounds/Collect_Items_3.wav"),
 ]
+
+var gas_sfx = [
+	preload("res://audio/sounds/Rat_Attack_1.wav"),
+	preload("res://audio/sounds/Rat_Attack_2.wav"),
+	preload("res://audio/sounds/Rat_Attack_3.wav"),
+	preload("res://audio/sounds/Rat_Attack_4.wav"),
+	preload("res://audio/sounds/Rat_Attack_5.wav"),
+]
+
 var next_track = null
 
 onready var tween = $Tween
@@ -38,6 +47,10 @@ func get_random_change_sfx():
 func get_random_pickup_sfx():
 	randomize()
 	return pickup_sfx[randi() % pickup_sfx.size()]
+	
+func get_random_gas_sfx():
+	randomize()
+	return gas_sfx[randi() % gas_sfx.size()]
 
 func _on_Tween_tween_completed(object, key):
 	if next_track:

@@ -57,3 +57,4 @@ func _draw():
 func _setup_states():
 	states.patrol = $States/Patrol
 	states.warned = $States/Warned
+	states.sleep = $States/Sleep

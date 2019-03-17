@@ -6,5 +6,3 @@ func _setup_states():
 	states.walk = $States/Walk
 	states.jump = $States/Jump
 	states.fall = $States/Fall
-
-	
