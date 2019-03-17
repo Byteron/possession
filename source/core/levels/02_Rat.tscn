@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="02_Rat" type="Node2D"]
+

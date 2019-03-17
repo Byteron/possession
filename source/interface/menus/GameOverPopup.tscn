@@ -18,8 +18,4 @@ custom_styles/panel = SubResource( 1 )
 popup_exclusive = true
 
 [node name="GameOver" parent="." instance=ExtResource( 1 )]
-margin_left = 4.0
-margin_top = 4.0
-margin_right = -4.0
-margin_bottom = -4.0
 
