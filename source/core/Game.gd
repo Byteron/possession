@@ -10,3 +10,7 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		HUD.toggle_pause_menu()
+
+func _on_Area2D_body_entered(body):
+	Scene.change(Scene.level05)
+	pass # Replace with function body.

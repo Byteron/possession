@@ -7,6 +7,7 @@ var Intro = "res://source/interface/story/stories/Intro.tscn"
 var TitleScreen = "res://source/interface/menus/TitleScreen.tscn"
 var Options = "res://source/interface/menus/Options.tscn"
 var Ending = "res://source/interface/story/Ending.tscn"
+var level05 = "res://source/core/levels/05_Second.tscn"
 
 # GLOBAL
 

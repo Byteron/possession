@@ -84,12 +84,12 @@ margin_bottom = 22.0
 [node name="BM" type="AnimatedSprite" parent="." index="4"]
 position = Vector2( 41.1392, 144.922 )
 frames = SubResource( 1 )
+frame = 1
 playing = true
 
 [node name="RACOON" type="AnimatedSprite" parent="." index="5"]
 position = Vector2( 134.654, 49.728 )
 frames = SubResource( 2 )
-frame = 3
 playing = true
 flip_h = true
 
@@ -102,7 +102,7 @@ playing = true
 [node name="SKUNK" type="AnimatedSprite" parent="." index="7"]
 position = Vector2( 333.791, 166.588 )
 frames = SubResource( 4 )
-frame = 1
+frame = 2
 playing = true
 flip_h = true
 
