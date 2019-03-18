@@ -6,6 +6,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	MusicPlayer.play(MusicPlayer.playlist.main_theme)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -13,5 +14,7 @@ func _ready():
 #	pass
 
 func _on_Area2D_body_entered(body):
-	Scene.change(Scene.inter03)
-	pass # Replace with function body.
+	if body.ID == "Rac":
+		Scene.change(Scene.inter03)
+	else:
+		pass # Replace with function body.

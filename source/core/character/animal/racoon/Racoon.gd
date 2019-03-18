@@ -1,5 +1,7 @@
 extends PlayerCharacter
 
+var ID = "Rac"
+
 onready var bag = $Bag
 
 func _setup_states():

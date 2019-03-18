@@ -44,7 +44,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Possession"
+config/name="Beastmaster's Heist"
 run/main_scene="res://source/interface/menus/TitleScreen.tscn"
 config/icon="res://icon.png"
 

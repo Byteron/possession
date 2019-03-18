@@ -12,5 +12,7 @@ func _input(event):
 		HUD.toggle_pause_menu()
 
 func _on_Area2D_body_entered(body):
-	Scene.change(Scene.level05)
-	pass # Replace with function body.
+	if body.ID == "Rac":
+		Scene.change(Scene.level05)
+	else:
+		pass # Replace with function body.

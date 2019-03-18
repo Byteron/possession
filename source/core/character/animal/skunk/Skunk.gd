@@ -5,6 +5,8 @@ onready var gas_area = $GasArea
 onready var gas_timer = $GasTimer
 onready var collision_shape = $CollisionShape2D
 
+var ID = "Sku"
+
 func gas():
 	gas.emit()
 	audio.stream = MusicPlayer.get_random_gas_sfx()

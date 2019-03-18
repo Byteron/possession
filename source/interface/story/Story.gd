@@ -14,6 +14,7 @@ func _input(event):
 		Scene.change(next_scene)
 
 func _ready():
+	MusicPlayer.play(MusicPlayer.playlist.bar_theme)
 	for page in pages:
 		page.connect("finished", self, "_on_Page_finished")
 		page.hide()

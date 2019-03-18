@@ -13,11 +13,7 @@ func _ready():
 #	pass
 
 func _on_Area2D_body_entered(body):
-	Scene.change(Scene.Ending)
-	print("Ending")
-	pass # Replace with function body.
-
-
-func _on_Area2D_area_entered(area):
-	Scene.change(Scene.Ending)
-	pass # Replace with function body.
+	if body.ID == "Rac":
+		Scene.change(Scene.Ending)
+	else:
+		pass # Replace with function body.
